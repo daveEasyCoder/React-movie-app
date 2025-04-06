@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: #202020;
+    font-family: "Poppins";
+}
+.movie-card{
+    max-width: 100%;
+    background-color: rgb(70, 70, 70);
+    color: rgb(232, 232, 232);
+    position: relative;
+}
+.hero{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.2)), url('assets/3075771.jpg');
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    background-color: rgb(23, 32, 48);
+}
+.genres{
+    font-size: 12px;
+    color: rgb(229, 229, 229);
+    font-family: "Outfit";
+}
+.overview{
+    font-family: "Outfit";
+}
+.welcome-description{
+    font-family: "Outfit";
+    font-size: 14px;
+    color: rgb(203, 203, 203);
+}
+.search-btn{
+    padding: 11px 32px;
+}
+.movie-card-wrapper{
+    grid-template-columns: repeat(5,1fr);
+}
+
+@media(max-width:1024px){
+    .movie-card-wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media(max-width:768px){
+    .movie-card-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:640px){
+    .movie-card-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:425px){
+    .movie-card-wrapper{
+        grid-template-columns:1fr;
+        max-width: 350px;
+    }
+}
