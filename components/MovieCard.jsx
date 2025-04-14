@@ -29,7 +29,7 @@ const MovieCard = ({movie}) => {
          </Link>
         <div className='px-2 py-2 '>
             <div className='font-bold text-md'>{movie.title}</div>
-            <div className='text-gray-400 text-sm'>{(movie.release_date).split("-")[0]}</div>
+            <div className='text-gray-400 text-sm'>{movie.release_date && (movie.release_date).split("-")[0]}</div>
         </div>
         <button onClick={handleClickFavorites} className='absolute top-0 right-0 bg-[rgba(0,0,0,0.4)] h-7 w-7 rounded-full flex items-center justify-center text-sm mx-2 my-2 cursor-pointer'>
            {isFavorite(movie.id) ? '❤️' : '🤍'}

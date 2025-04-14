@@ -9,6 +9,7 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  base: '/React-movie-app/',
   server:{
     port:3000,
   }

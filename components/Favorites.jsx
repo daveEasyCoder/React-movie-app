@@ -13,8 +13,8 @@ const Favorites = () => {
           favorites && favorites.length ? 
             <div className='movie-card-wrapper grid gap-2 px-2.5 max-w-6xl m-auto'>
               {
-                favorites.map((movie) => (
-                  <MovieCard key={movie.id} movie={movie} />
+                favorites.map((movie,index) => (
+                  <MovieCard key={index} movie={movie} />
                 ))
               }
            </div>

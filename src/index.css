@@ -5,10 +5,9 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
     background: #202020;
-    font-family: "Poppins";
+    font-family: "Poppins",sans-serif;
 }
 .movie-card{
     max-width: 100%;
@@ -66,5 +65,11 @@ body{
     .movie-card-wrapper{
         grid-template-columns:1fr;
         max-width: 350px;
+    }
+    .search-btn{
+        padding: 11px 12px;
+    }
+    .input-box{
+        width: 30%;
     }
 }

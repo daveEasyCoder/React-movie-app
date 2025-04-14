@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-       <Router>
+       <Router basename='/React-movie-app/'>
          <MovieProvider>
          <Navbar />
             <Routes>
